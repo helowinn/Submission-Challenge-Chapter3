@@ -9,8 +9,8 @@ class Main {
                 val mainMenu = MainView()
                 mainMenu.startGame(this)
                 println("\n")
-                print("Main lagi? Y/N")
-                val lanjutMain = readLine()!!.toUpperCase()
+                println("Main lagi? Y/N")
+                val lanjutMain = readLine()!!.uppercase()
             }while (lanjutMain == "Y")
 
         }

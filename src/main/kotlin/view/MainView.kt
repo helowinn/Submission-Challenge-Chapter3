@@ -18,7 +18,7 @@ class MainView {
         println("Masukkan pilihan Pemain 1 : ")
         val playerSatu = readLine()!!.lowercase()
         println("Masukkan pilihan Pemain 2 : ")
-        val playerDua = readLine()!!.lowercase(Locale.getDefault())
+        val playerDua = readLine()!!.lowercase()
         println("Hasil : ")
 
 
@@ -31,7 +31,7 @@ class MainView {
         } else if (playerDua == "batu" && playerSatu == "gunting" || playerDua == "gunting" && playerSatu == "kertas" ||
             playerDua == "kertas" && playerSatu == "batu"
         ) {
-            hasil = "Player Dua menang!"
+            hasil = "Player dua menang!"
         } else {
             hasil = "Input salah! Silahkan masukkan ulang "
         }
